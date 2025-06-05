@@ -1,0 +1,12 @@
+auth:
+  username: banking_user
+  password: banking_pass
+  database: logindb
+
+primary:
+  persistence:
+    enabled: true
+    existingClaim: postgres-pvc
+
+  service:
+    type: ClusterIP
